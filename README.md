@@ -1,2 +1,3 @@
-# goit-markup-hw-01
-Home-work-nr1
+# goit-markup-hws
+
+Home-work-nr1 Home-work-nr2
