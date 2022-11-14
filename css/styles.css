@@ -16,16 +16,9 @@
 /* ---------- body ---------- */
 
 body {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
-  line-height: 1.71;
   letter-spacing: 0.03em;
-
-  width: 1600px;
-  height: 2346px;
-  margin: 0 auto;
 
   color: var(--text-main-color);
   background-color: var(--background-color);
@@ -75,7 +68,7 @@ body {
 
 .header-logo,
 .footer-logo {
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
@@ -89,16 +82,20 @@ body {
   color: var(--second-links-color);
 }
 
-.header-list .link,
-.header-contacts .number {
-  font-family: 'Roboto';
-  font-style: normal;
+.header-list .link {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
 
   color: var(--headlines-links-color);
+}
+
+.header-contacts .number {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--text-main-color);
 }
 
 .header-list .link:hover,
@@ -108,6 +105,10 @@ body {
 
 .header-list .link:focus,
 .header-contacts .number:focus {
+  color: var(--second-links-color);
+}
+
+.header-list .current {
   color: var(--second-links-color);
 }
 
@@ -164,7 +165,6 @@ body {
 
 .business-headline,
 .team-headline {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
@@ -242,23 +242,15 @@ body {
 }
 
 .post-address {
-  font-family: 'Roboto';
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
 
   color: var(--just-white-color);
 }
 
 .footer-contacts .number {
-  font-family: 'Roboto';
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
 
   color: var(--footer-contacts-color);
 }
