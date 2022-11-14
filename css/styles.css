@@ -99,10 +99,7 @@ body {
 }
 
 .header-list .link:hover,
-.header-contacts .number:hover {
-  color: var(--second-links-color);
-}
-
+.header-contacts .number:hover,
 .header-list .link:focus,
 .header-contacts .number:focus {
   color: var(--second-links-color);
