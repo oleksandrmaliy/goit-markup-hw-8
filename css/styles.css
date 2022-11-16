@@ -64,6 +64,15 @@ body {
   overflow: hidden;
 }
 
+.section {
+  padding-top: 94px;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+}
+
 /* ---------- header ---------- */
 
 .header-logo,
