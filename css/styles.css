@@ -90,6 +90,10 @@ section {
 
 /* ---------- header ---------- */
 
+.header {
+  border-bottom: 5px solid var(--header-frame-color);
+}
+
 .header-flex {
   display: flex;
 }
@@ -163,7 +167,7 @@ section {
   color: var(--second-links-color);
 }
 
-/* ---------- STUDIO ---------- */
+/* ---------- PAGE STUDIO ---------- */
 /* ---------- hero ---------- */
 
 .hero {
@@ -244,7 +248,6 @@ section {
 /* ---------- business ---------- */
 /* ---------- our team ---------- */
 
-
 .business {
   padding-top: 0px;
   text-align: center;
@@ -311,11 +314,7 @@ section {
   letter-spacing: 0.03em;
 }
 
-/* ---------- PORTFOLIO ---------- */
-
-.portfolio {
-  border-top: 5px solid var(--header-frame-color);
-}
+/* ---------- PAGE PORTFOLIO ---------- */
 /* ---------- filter ---------- */
 
 .filter-list {
