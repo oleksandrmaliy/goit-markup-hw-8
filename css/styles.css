@@ -75,22 +75,23 @@ ol {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
+section {
+  padding: 94px 0px;
+}
 .container {
   width: 1200px;
   margin: 0 auto;
-  padding: 94px 15px;
+  padding: 0px 15px;
 }
 
 /* ---------- header ---------- */
 
-.container-header {
+.header-flex {
   display: flex;
-  width: 1200px;
-
-  margin: 0 auto;
-  padding: 0 15px;
 }
 
 .header-nav,
@@ -243,9 +244,10 @@ img {
 /* ---------- business ---------- */
 /* ---------- our team ---------- */
 
-.container.bsnss {
-  text-align: center;
+
+.business {
   padding-top: 0px;
+  text-align: center;
 }
 
 .business-list,
@@ -391,13 +393,9 @@ img {
 /* ---------- footer ---------- */
 
 .footer {
-  background-color: var(--hero-background-color);
-}
+  padding: 60px 0px;
 
-.container-footer {
-  width: 1200px;
-  padding: 60px 15px;
-  margin: 0 auto;
+  background-color: var(--hero-background-color);
 }
 
 .footer-logo {
