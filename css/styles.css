@@ -4,6 +4,7 @@
   --footer-logo-color: #ffffff;
   --headlines-links-color: #212121;
   --second-links-color: #2196f3;
+  --hero-button-hover: #188ce8;
   --text-main-color: #757575;
   --hero-background-color: #2f303a;
   --just-white-color: #ffffff;
@@ -90,7 +91,7 @@ section {
 /* ---------- header ---------- */
 
 .header {
-  border-bottom: 5px solid var(--header-frame-color);
+  border-bottom: 1px solid var(--header-frame-color);
 }
 
 .header-flex {
@@ -210,8 +211,7 @@ section {
 
 .hero-button:hover,
 .hero-button:focus {
-  color: var(--headlines-links-color);
-  background-color: var(--team-background-color);
+  background-color: var(--hero-button-hover);
 }
 
 /* ---------- peculiarities ---------- */
@@ -293,8 +293,12 @@ section {
   background-color: var(--just-white-color);
 }
 
+.team-members-description {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .team-member {
-  margin-top: 30px;
   margin-bottom: 10px;
 
   font-weight: 500;
@@ -306,8 +310,6 @@ section {
 }
 
 .team-member-position {
-  margin-bottom: 30px;
-
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
