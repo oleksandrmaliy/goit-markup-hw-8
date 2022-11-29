@@ -294,12 +294,13 @@ section {
 }
 
 .business-list li + li,
-.team-list li + li {
+.team-list li + li,
+.clients-list li + li {
   margin-left: 30px;
 }
 
 .business-list .business-list-img {
-  width: ((100%-60px)/3);
+  width: calc((100%-60px) / 3);
 }
 
 .business-headline,
@@ -361,8 +362,63 @@ section {
   fill: var(--team-media-color);
 }
 
-.icon-team:hover {
+.soc-media-team:hover,
+.soc-media-team:focus {
+  background-color: var(--second-links-color);
+}
+
+.soc-media-team:hover .icon-team,
+.soc-media-team:focus .icon-team {
   fill: var(--just-white-color);
+}
+
+/* ---------- clients ---------- */
+
+.clients {
+  text-align: center;
+  background-color: var(--just-white-color);
+}
+
+.clients-headline {
+  margin-bottom: 50px;
+
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+
+  color: var(--headlines-links-color);
+}
+
+.clients-list {
+  display: flex;
+}
+
+.clients-list li {
+  width: calc((100%-150px) / 6);
+}
+
+.clients-list-link {
+  display: block;
+  justify-content: center;
+
+  padding: 16px 0;
+
+  border: 1px solid var(--team-media-color);
+  border-radius: 4px;
+}
+
+.clients-list-img {
+  fill: var(--team-media-color);
+}
+
+.clients-list-link:hover,
+.clients-list-link:focus {
+  border: 1px solid var(--second-links-color);
+}
+
+.clients-list-link:hover .clients-list-img,
+.clients-list-link:focus .clients-list-img {
+  fill: var(--second-links-color);
 }
 
 /* ---------- PAGE PORTFOLIO ---------- */
@@ -525,8 +581,6 @@ section {
   background-color: var(--footer-media-base);
 }
 
-.soc-media-team:hover,
-.soc-media-team:focus,
 .soc-media-ftr:hover,
 .soc-media-ftr:focus {
   background-color: var(--second-links-color);
