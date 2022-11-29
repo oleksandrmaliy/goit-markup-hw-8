@@ -48,32 +48,38 @@
     </header>
     <main>
       <section class="hero">
-        <h1 class="hero-headline">Ефективні рішення для<br />вашого бізнесу</h1>
-        <button type="button" class="hero-button">Замовити послугу</button>
+        <div class="container">
+          <h1 class="hero-headline">Ефективні рішення для<br />вашого бізнесу</h1>
+          <button type="button" class="hero-button">Замовити послугу</button>
+        </div>
       </section>
       <section class="peculiarities">
         <div class="container">
           <h2 class="visually-hidden">Особливості</h2>
           <ul class="peculiarities-list list">
             <li>
+              <div class="pec-list-img antenna"></div>
               <h3 class="pec-list-headlines">УВАГА ДО ДЕТАЛЕЙ</h3>
               <p class="pec-list-text">
                 Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
               </p>
             </li>
             <li>
+              <div class="pec-list-img clock"></div>
               <h3 class="pec-list-headlines">ПУНКТУАЛЬНІСТЬ</h3>
               <p class="pec-list-text">
                 Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
               </p>
             </li>
             <li>
+              <div class="pec-list-img diagram"></div>
               <h3 class="pec-list-headlines">ПЛАНУВАННЯ</h3>
               <p class="pec-list-text">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
             <li>
+              <div class="pec-list-img astronaut"></div>
               <h3 class="pec-list-headlines">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
               <p class="pec-list-text">
                 Значимість цих проблем настільки очевидна, що реалізація планових завдань.
@@ -107,6 +113,36 @@
               <div class="team-members-description">
                 <h3 class="team-member">Ігор Дем'яненко</h3>
                 <p lang="en" class="team-member-position">Product Designer</p>
+                <ul class="soc-media list">
+                  <li>
+                    <a href="#" class="soc-media-team">
+                      <svg width="20" height="20" class="icon-team">
+                        <use href="./images/sprite.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="soc-media-team">
+                      <svg width="20" height="20" class="icon-team">
+                        <use href="./images/sprite.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="soc-media-team">
+                      <svg width="20" height="20" class="icon-team">
+                        <use href="./images/sprite.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="soc-media-team">
+                      <svg width="20" height="20" class="icon-team">
+                        <use href="./images/sprite.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </li>
             <li class="team-list-item">
@@ -135,24 +171,61 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container">
-        <a href="./index.html" lang="en" class="footer-logo"><span class="web">Web</span>Studio</a>
-        <address id="contacts">
-          <ul class="footer-contacts list">
+      <div class="container ftr">
+        <div class="logo-contacts">
+          <a href="./index.html" lang="en" class="footer-logo"
+            ><span class="web">Web</span>Studio</a
+          >
+          <address id="contacts">
+            <ul class="footer-contacts list">
+              <li>
+                <a
+                  href="https://goo.gl/maps/xe36P5NhuRansbAw9"
+                  target="_blank"
+                  rel="nofollow noreferrer noopener"
+                  class="post-address"
+                >
+                  м. Київ, пр-т Лесі Українки, 26
+                </a>
+              </li>
+              <li><a href="mailto:info@devstudio.com" class="number">info@devstudio.com</a></li>
+              <li><a href="tel:+380961111111" class="number">+38 096 111 11 11</a></li>
+            </ul>
+          </address>
+        </div>
+        <div class="social-media">
+          <p class="join">ПРИЄДНУЙТЕСЬ</p>
+          <ul class="soc-media list">
             <li>
-              <a
-                href="https://goo.gl/maps/xe36P5NhuRansbAw9"
-                target="_blank"
-                rel="nofollow noreferrer noopener"
-                class="post-address"
-              >
-                м. Київ, пр-т Лесі Українки, 26
+              <a href="#" class="soc-media-ftr">
+                <svg width="20" height="20" class="icon-footer">
+                  <use href="./images/sprite.svg#icon-instagram"></use>
+                </svg>
               </a>
             </li>
-            <li><a href="mailto:info@devstudio.com" class="number">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111" class="number">+38 096 111 11 11</a></li>
+            <li>
+              <a href="#" class="soc-media-ftr">
+                <svg width="20" height="20" class="icon-footer">
+                  <use href="./images/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="soc-media-ftr">
+                <svg width="20" height="20" class="icon-footer">
+                  <use href="./images/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="soc-media-ftr">
+                <svg width="20" height="20" class="icon-footer">
+                  <use href="./images/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
           </ul>
-        </address>
+        </div>
       </div>
     </footer>
   </body>
