@@ -178,6 +178,26 @@ section {
   color: var(--second-links-color);
 }
 
+.header-links {
+  position: relative;
+}
+
+.link.current::after {
+  content: '';
+
+  display: block;
+  position: absolute;
+
+  bottom: 0;
+
+  width: 100%;
+  height: 4px;
+  
+  border-radius: 2px;
+  
+  background-color: var(--second-links-color);
+}
+
 /* ---------- PAGE STUDIO ---------- */
 /* ---------- hero ---------- */
 
