@@ -250,10 +250,11 @@ section {
 .pec-list-img {
   display: flex;
 
-  padding: 25px 0;
+  height: 120px;
   margin-bottom: 30px;
 
   justify-content: center;
+  align-items: center;
 
   background-color: var(--team-background-color);
 }
@@ -392,10 +393,12 @@ section {
 }
 
 .clients-list-link {
-  display: block;
-  justify-content: center;
+  display: flex;
 
-  padding: 16px 0;
+  height: 92px;
+
+  justify-content: center;
+  align-items: center;
 
   border: 1px solid var(--team-media-color);
   border-radius: 4px;
@@ -513,6 +516,8 @@ section {
 
 .container.ftr {
   display: flex;
+
+  align-items: baseline;
 }
 
 .footer-logo {
@@ -552,10 +557,6 @@ section {
 .post-address:focus,
 .footer-contacts .number:focus {
   color: var(--second-links-color);
-}
-
-.social-media {
-  padding-top: 12px;
 }
 
 .join {
