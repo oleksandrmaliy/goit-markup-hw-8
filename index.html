@@ -64,7 +64,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-headline">Ефективні рішення для<br />вашого бізнесу</h1>
-          <button type="button" class="hero-button">Замовити послугу</button>
+          <button type="button" class="hero-button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
       <section class="peculiarities">
@@ -124,12 +124,15 @@
           <ul class="business-list list">
             <li class="business-list-img">
               <img src="./images/box-1.jpg" alt="Програмування на девайсах" width="370" />
+              <div class="business-note"><p>Десктопні додатки</p></div>
             </li>
             <li class="business-list-img">
               <img src="./images/box-2.jpg" alt="Підбір макетів для мобільного" width="370" />
+              <div class="business-note"><p>Мобільні додатки</p></div>
             </li>
             <li class="business-list-img">
               <img src="./images/box-3.jpg" alt="Підбір кольорової гамми" width="370" />
+              <div class="business-note"><p>Дизайнерські рішення</p></div>
             </li>
           </ul>
         </div>
@@ -397,5 +400,16 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. At fugiat adipisci reiciendis
+          beatae veniam reprehenderit minima accusantium nemo magni, ex doloribus, quisquam ad!
+          Ducimus sit dolorum pariatur, ad molestias accusantium!
+        </p>
+        <button data-modal-close>закрити</button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
