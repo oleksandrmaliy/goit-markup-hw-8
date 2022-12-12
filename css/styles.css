@@ -690,9 +690,9 @@ section {
   color: var(--just-white-color);
 }
 
-.social-media {
+/* .social-media {
   margin-right: 93px;
-}
+} */
 
 .soc-media li + li {
   margin-left: 10px;
@@ -724,6 +724,10 @@ section {
   fill: var(--just-white-color);
 }
 
+.subscribe {
+  margin-left: auto;
+  margin-right: 0;
+}
 .footer-email-form {
   position: relative;
   display: flex;
@@ -847,7 +851,6 @@ section {
   box-shadow: none;
 }
 
-
 .modal-button {
   display: flex;
 
@@ -932,6 +935,7 @@ section {
 
 .modal-contacts:hover,
 .modal-contacts:focus {
+  outline: none;
   border: 1px solid var(--second-links-color);
 }
 
@@ -968,6 +972,7 @@ section {
 
 .modal-comment:hover,
 .modal-comment:focus {
+  outline: none;
   border: 1px solid var(--second-links-color);
 }
 
