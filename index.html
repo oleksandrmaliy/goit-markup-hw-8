@@ -400,7 +400,7 @@
         </div>
         <div class="subscribe">
           <p class="subscribe-headline">Підпишіться на розсилку</p>
-          <form action="">
+          <form action="post">
             <div class="footer-email-form">
               <input
                 type="email"
@@ -429,10 +429,10 @@
           </svg>
         </button>
         <p class="modal-headline">Залиште свої дані, ми вам передзвонимо</p>
-        <form action="" class="modal-field">
+        <form action="post" class="modal-field">
           <label for="name" class="modal-label">Ім'я</label>
           <div class="modal-input">
-            <input type="name" id="name" name="contacts" class="modal-contacts" />
+            <input type="text" id="name" name="contacts" class="modal-contacts" />
             <svg width="18" height="18">
               <use href="./images/sprite.svg#icon-person"></use>
             </svg>
@@ -460,11 +460,11 @@
           ></textarea>
           <div class="agreement">
             <input
-                type="checkbox"
-                id="agreement-checkbox"
-                name="modal-agreement"
-                class="agreement-checkbox visually-hidden"
-              />
+              type="checkbox"
+              id="agreement-checkbox"
+              name="modal-agreement"
+              class="agreement-checkbox visually-hidden"
+            />
             <label for="agreement-checkbox" class="agreement-label">
               Погоджуюся з розсилкою та приймаю
               <a
