@@ -1,0 +1,18 @@
+@import './utils/variables';
+@import './utils/normalize';
+
+@import './base/reset';
+@import './base/common';
+@import './base/section';
+@import './base/container';
+
+@import './components/header';
+@import './components/hero';
+@import './components/peculiarities';
+@import './components/business-team';
+@import './components/clients';
+@import './components/filter';
+@import './components/examples';
+@import './components/footer';
+
+@import './modal/modal';

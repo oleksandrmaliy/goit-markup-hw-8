@@ -1,0 +1,39 @@
+.peculiarities-list {
+  display: flex;
+}
+
+.peculiarities-list > li {
+  width: calc((100% - 90px) / 4);
+}
+
+.peculiarities-list li + li {
+  margin-left: 30px;
+}
+
+.pec-list-img {
+  display: flex;
+
+  height: 120px;
+  margin-bottom: 30px;
+
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--team-background-color);
+}
+
+.pec-list-headlines {
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--headlines-links-color);
+}
+
+.pec-list-text {
+  line-height: 1.71;
+}

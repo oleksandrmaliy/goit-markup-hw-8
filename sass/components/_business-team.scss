@@ -1,0 +1,121 @@
+
+.business {
+    padding-top: 0px;
+    text-align: center;
+  }
+  
+  .business-list,
+  .team-list {
+    display: flex;
+  }
+  
+  .business-list li + li,
+  .team-list li + li,
+  .clients-list li + li {
+    margin-left: 30px;
+  }
+  
+  .business-list .business-list-img {
+    position: relative;
+  
+    width: calc((100% - 60px) / 3);
+  }
+  
+  .business-note {
+    position: absolute;
+    display: flex;
+  
+    justify-content: center;
+    align-items: center;
+  
+    left: 0;
+    bottom: 0;
+  
+    height: 70px;
+    width: 100%;
+  
+    background-color: var(--business-background-color);
+  }
+  
+  .business-list p {
+    font-weight: 700;
+    line-height: 16px;
+  
+    text-transform: uppercase;
+  
+    color: var(--just-white-color);
+  }
+  
+  .business-headline,
+  .team-headline {
+    margin-bottom: 50px;
+  
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+  
+    color: var(--headlines-links-color);
+  }
+  
+  .our-team,
+  .team-list {
+    text-align: center;
+    background-color: var(--team-background-color);
+  }
+  
+  .team-list-item {
+    width: calc((100% - 90px) / 4);
+  
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  
+    background-color: var(--just-white-color);
+  }
+  
+  .team-members-description {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  
+  .team-member {
+    margin-bottom: 10px;
+  
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+  
+    color: var(--headlines-links-color);
+  }
+  
+  .team-member-position {
+    margin-bottom: 16px;
+  
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+  }
+  
+  .soc-media {
+    display: inline-flex;
+  }
+  
+  .icon-team {
+    fill: var(--team-media-color);
+  }
+  
+  .soc-media-team .icon-team {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .soc-media-team:hover,
+  .soc-media-team:focus {
+    background-color: var(--second-links-color);
+  }
+  
+  .soc-media-team:hover .icon-team,
+  .soc-media-team:focus .icon-team {
+    fill: var(--just-white-color);
+  }
+  
