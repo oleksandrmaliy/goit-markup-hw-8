@@ -1,7 +1,7 @@
 .footer {
   padding: 60px 0px;
 
-  background-color: var(--footer-background-color);
+  background-color: $footer-background-color;
 }
 
 .container.ftr {
@@ -15,14 +15,14 @@
   width: 145px;
   margin-bottom: 20px;
 
-  color: var(--just-white-color);
+  color: $just-white-color;
 }
 
 .post-address {
   font-style: normal;
   line-height: 1.71;
 
-  color: var(--just-white-color);
+  color: $just-white-color;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -37,7 +37,7 @@
   font-style: normal;
   line-height: 1.71;
 
-  color: var(--footer-contacts-color);
+  color: $footer-contacts-color;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -50,7 +50,7 @@
 .footer-contacts .number:hover,
 .post-address:focus,
 .footer-contacts .number:focus {
-  color: var(--second-links-color);
+  color: $second-links-color;
 }
 
 .join,
@@ -62,7 +62,7 @@
 
   margin-bottom: 20px;
 
-  color: var(--just-white-color);
+  color: $just-white-color;
 }
 
 .soc-media li + li {
@@ -83,16 +83,16 @@
 }
 
 .soc-media-ftr {
-  background-color: var(--footer-media-base);
+  background-color: $footer-media-base;
 }
 
 .soc-media-ftr:hover,
 .soc-media-ftr:focus {
-  background-color: var(--second-links-color);
+  background-color: $second-links-color;
 }
 
 .icon-footer {
-  fill: var(--just-white-color);
+  fill: $just-white-color;
 }
 
 .subscribe {
@@ -110,7 +110,7 @@
   margin-right: 12px;
   padding-left: 16px;
 
-  color: var(--just-white-color);
+  color: $just-white-color;
   background-color: transparent;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -127,7 +127,7 @@
   font-size: 16px;
   line-height: 1.25;
 
-  color: var(--footer-contacts-color);
+  color: $footer-contacts-color;
 }
 
 .subscribe-button {
@@ -147,15 +147,15 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 
-  color: var(--just-white-color);
-  background-color: var(--second-links-color);
+  color: $just-white-color;
+  background-color: $second-links-color;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .subscribe-button svg {
   margin-left: 10px;
-  fill: var(--just-white-color);
+  fill: $just-white-color;
 }
 
 .input-subscribe-email:not(:placeholder-shown) + .label-subscribe-email {
@@ -164,5 +164,5 @@
 
 .subscribe-button:hover,
 .subscribe-button:focus {
-  background-color: var(--hero-button-hover);
+  background-color: $hero-button-hover;
 }

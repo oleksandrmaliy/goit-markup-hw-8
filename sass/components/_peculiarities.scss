@@ -19,7 +19,7 @@
   justify-content: center;
   align-items: center;
 
-  background-color: var(--team-background-color);
+  background-color: $team-background-color;
 }
 
 .pec-list-headlines {
@@ -31,7 +31,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  color: var(--headlines-links-color);
+  color: $headlines-links-color;
 }
 
 .pec-list-text {

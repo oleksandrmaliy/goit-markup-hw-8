@@ -31,7 +31,7 @@
     height: 70px;
     width: 100%;
   
-    background-color: var(--business-background-color);
+    background-color: $business-background-color;
   }
   
   .business-list p {
@@ -40,7 +40,7 @@
   
     text-transform: uppercase;
   
-    color: var(--just-white-color);
+    color: $just-white-color;
   }
   
   .business-headline {
@@ -50,5 +50,5 @@
     line-height: 1.17;
     letter-spacing: 0.03em;
   
-    color: var(--headlines-links-color);
+    color: $headlines-links-color;
   }

@@ -5,8 +5,8 @@ body {
 
   padding-top: 80px;
 
-  color: var(--text-main-color);
-  background-color: var(--background-color);
+  color: $text-main-color;
+  background-color: $background-color;
 }
 
 button {
@@ -18,7 +18,7 @@ button {
 .business,
 .team-list,
 .portfolio {
-  background-color: var(--just-white-color);
+  background-color: $just-white-color;
 }
 
 .visually-hidden {
