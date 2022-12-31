@@ -1,52 +1,12 @@
 
-.business {
-    padding-top: 0px;
-    text-align: center;
-  }
-  
-  .business-list,
   .team-list {
     display: flex;
   }
   
-  .business-list li + li,
-  .team-list li + li,
-  .clients-list li + li {
+  .team-list li + li {
     margin-left: 30px;
   }
   
-  .business-list .business-list-img {
-    position: relative;
-  
-    width: calc((100% - 60px) / 3);
-  }
-  
-  .business-note {
-    position: absolute;
-    display: flex;
-  
-    justify-content: center;
-    align-items: center;
-  
-    left: 0;
-    bottom: 0;
-  
-    height: 70px;
-    width: 100%;
-  
-    background-color: var(--business-background-color);
-  }
-  
-  .business-list p {
-    font-weight: 700;
-    line-height: 16px;
-  
-    text-transform: uppercase;
-  
-    color: var(--just-white-color);
-  }
-  
-  .business-headline,
   .team-headline {
     margin-bottom: 50px;
   

@@ -16,6 +16,10 @@
   .clients-list {
     display: flex;
   }
+
+  .clients-list li + li {
+    margin-left: 30px;
+  }
   
   .clients-list li {
     width: calc((100% - 150px) / 6);

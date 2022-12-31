@@ -551,16 +551,13 @@ section {
   text-align: center;
 }
 
-.business-list,
-.team-list {
+.business-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.business-list li + li,
-.team-list li + li,
-.clients-list li + li {
+.business-list li + li {
   margin-left: 30px;
 }
 
@@ -594,7 +591,24 @@ section {
   color: var(--just-white-color);
 }
 
-.business-headline,
+.business-headline {
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--headlines-links-color);
+}
+
+.team-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.team-list li + li {
+  margin-left: 30px;
+}
+
 .team-headline {
   margin-bottom: 50px;
   font-size: 36px;
@@ -680,6 +694,10 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.clients-list li + li {
+  margin-left: 30px;
 }
 
 .clients-list li {
