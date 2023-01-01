@@ -1,13 +1,13 @@
 .peculiarities-list {
   display: flex;
-}
 
-.peculiarities-list > li {
-  width: calc((100% - 90px) / 4);
-}
+  & > li {
+    width: calc((100% - 90px) / 4);
+  }
 
-.peculiarities-list li + li {
-  margin-left: 30px;
+  li + li {
+    margin-left: 30px;
+  }
 }
 
 .pec-list-img {

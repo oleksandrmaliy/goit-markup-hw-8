@@ -1,13 +1,13 @@
-.footer {
-  padding: 60px 0px;
-
-  background-color: $footer-background-color;
-}
-
 .container.ftr {
   display: flex;
 
   align-items: baseline;
+}
+
+.footer {
+  padding: 60px 0px;
+
+  background-color: $footer-background-color;
 }
 
 .footer-logo {
@@ -15,22 +15,17 @@
   width: 145px;
   margin-bottom: 20px;
 
-  color: $just-white-color;
-}
-
-.post-address {
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
-  line-height: 1.71;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
 
   color: $just-white-color;
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.logo-contacts {
-  display: block;
-  width: 231px;
-  margin-right: 70px;
+  .web {
+    color: $second-links-color;
+  }
 }
 
 .footer-contacts .number {
@@ -40,17 +35,40 @@
   color: $footer-contacts-color;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $second-links-color;
+  }
 }
 
 .footer-contacts li + li {
   margin-top: 9px;
 }
 
-.post-address:hover,
-.footer-contacts .number:hover,
-.post-address:focus,
-.footer-contacts .number:focus {
-  color: $second-links-color;
+.footer-email-form {
+  position: relative;
+  display: flex;
+}
+
+.post-address {
+  font-style: normal;
+  line-height: 1.71;
+
+  color: $just-white-color;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $second-links-color;
+  }
+}
+
+.logo-contacts {
+  display: block;
+  width: 231px;
+  margin-right: 70px;
 }
 
 .join,
@@ -84,24 +102,15 @@
 
 .soc-media-ftr {
   background-color: $footer-media-base;
-}
 
-.soc-media-ftr:hover,
-.soc-media-ftr:focus {
-  background-color: $second-links-color;
+  &:hover,
+  &:focus {
+    background-color: $second-links-color;
+  }
 }
 
 .icon-footer {
   fill: $just-white-color;
-}
-
-.subscribe {
-  margin-left: auto;
-  margin-right: 0;
-}
-.footer-email-form {
-  position: relative;
-  display: flex;
 }
 
 .input-subscribe-email {
@@ -116,6 +125,10 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+
+  &:not(:placeholder-shown) + .label-subscribe-email {
+    opacity: 0;
+  }
 }
 
 .label-subscribe-email {
@@ -128,6 +141,11 @@
   line-height: 1.25;
 
   color: $footer-contacts-color;
+}
+
+.subscribe {
+  margin-left: auto;
+  margin-right: 0;
 }
 
 .subscribe-button {
@@ -151,18 +169,14 @@
   background-color: $second-links-color;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.subscribe-button svg {
-  margin-left: 10px;
-  fill: $just-white-color;
-}
+  svg {
+    margin-left: 10px;
+    fill: $just-white-color;
+  }
 
-.input-subscribe-email:not(:placeholder-shown) + .label-subscribe-email {
-  opacity: 0;
-}
-
-.subscribe-button:hover,
-.subscribe-button:focus {
-  background-color: $hero-button-hover;
+  &:hover,
+  &:focus {
+    background-color: $hero-button-hover;
+  }
 }
