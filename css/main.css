@@ -325,7 +325,7 @@ section {
   z-index: 10;
   border-bottom: 1px solid #ececec;
 }
-.header-flex {
+.header__flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -443,7 +443,7 @@ section {
   background-repeat: no-repeat;
   background-color: #c4c4c4;
 }
-.hero-headline {
+.hero__headline {
   margin-bottom: 30px;
   font-size: 44px;
   font-weight: 900;
@@ -454,7 +454,7 @@ section {
   color: #ffffff;
 }
 
-.hero-button {
+.hero__button {
   width: 216px;
   height: 50px;
   border-radius: 4px;
@@ -470,23 +470,23 @@ section {
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.hero-button:hover, .hero-button:focus {
+.hero__button:hover, .hero__button:focus {
   background-color: #188ce8;
 }
 
-.feature-list {
+.feature__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.feature-list > li {
+.feature__list li {
   width: calc((100% - 90px) / 4);
 }
-.feature-list li + li {
+.feature__list li + li {
   margin-left: 30px;
 }
 
-.feature-list-img {
+.feature__img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -501,7 +501,7 @@ section {
   background-color: #f5f4fa;
 }
 
-.feature-list-headlines {
+.feature__headlines {
   margin-bottom: 10px;
   font-weight: 700;
   line-height: 1.14;
@@ -513,7 +513,7 @@ section {
   padding-top: 0px;
   text-align: center;
 }
-.business-note {
+.business__note {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -530,94 +530,112 @@ section {
   width: 100%;
   background-color: rgba(47, 48, 58, 0.8);
 }
-.business-headline {
+.business__headline {
   margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.17;
   color: #212121;
 }
+.business__img {
+  position: relative;
+  width: calc((100% - 60px) / 3);
+}
 
-.business-list {
+.business__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.business-list li + li {
+.business__list li + li {
   margin-left: 30px;
 }
-.business-list .business-list-img {
-  position: relative;
-  width: calc((100% - 60px) / 3);
-}
-.business-list p {
+.business__list p {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
   color: #ffffff;
 }
 
-.our-team {
+.team {
   text-align: center;
   background-color: #f5f4fa;
 }
-
-.team-headline {
+.team__headline {
   margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.17;
   color: #212121;
 }
-
-.team-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-  background-color: #f5f4fa;
-}
-.team-list li + li {
-  margin-left: 30px;
-}
-.team-list-item {
+.team__item {
   width: calc((100% - 90px) / 4);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
 }
-.team-list .team-member {
+.team__member {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.team__name {
   margin-bottom: 10px;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.19;
   color: #212121;
 }
-.team-list .team-member-position {
+.team__rank {
   margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
 }
-.team-list .team-members-description {
-  padding-top: 30px;
-  padding-bottom: 30px;
+
+.team__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  background-color: #f5f4fa;
+}
+.team__list li + li {
+  margin-left: 30px;
 }
 
-.soc-media {
+.media {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
-.soc-media .icon-team {
+.media li + li {
+  margin-left: 10px;
+}
+
+.media__link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.media__link:hover, .media__link:focus {
+  background-color: #2196f3;
+}
+
+.media__icon {
   fill: #afb1b8;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.soc-media .soc-media-team:hover,
-.soc-media .soc-media-team:focus {
-  background-color: #2196f3;
-}
-.soc-media .soc-media-team:hover .icon-team,
-.soc-media .soc-media-team:focus .icon-team {
+.media__link:hover .media__icon, .media__link:focus .media__icon {
   fill: #ffffff;
 }
 
@@ -625,31 +643,26 @@ section {
   text-align: center;
   background-color: #ffffff;
 }
-.clients-headline {
+.clients__headline {
   margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.71;
   color: #212121;
 }
 
-.clients-list {
+.clients__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.clients-list li {
+.clients__list li {
   width: calc((100% - 150px) / 6);
 }
-.clients-list li + li {
+.clients__list li + li {
   margin-left: 30px;
 }
-.clients-list-img {
-  fill: #afb1b8;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.clients-list-link {
+.clients__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -665,10 +678,16 @@ section {
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
-.clients-list-link:hover, .clients-list-link:focus {
+.clients__link:hover, .clients__link:focus {
   border: 1px solid #2196f3;
 }
-.clients-list-link:hover .clients-list-img, .clients-list-link:focus .clients-list-img {
+
+.clients__img {
+  fill: #afb1b8;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.clients__link:hover .clients__img, .clients__link:focus .clients__img {
   fill: #2196f3;
 }
 

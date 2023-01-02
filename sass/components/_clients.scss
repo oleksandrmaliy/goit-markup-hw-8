@@ -2,16 +2,16 @@
   text-align: center;
   background-color: $just-white-color;
 
-  &-headline {
+  &__headline {
     margin-bottom: 50px;
 
     @include font($fs: 36px, $fw: null, $lh: 1.71, $ls: null);
-    
+
     color: $headlines-links-color;
   }
 }
 
-.clients-list {
+.clients__list {
   display: flex;
 
   li {
@@ -21,15 +21,9 @@
   li + li {
     margin-left: 30px;
   }
-
-  &-img {
-    fill: $team-media-color;
-
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
 }
 
-.clients-list-link {
+.clients__link {
   display: flex;
 
   height: 92px;
@@ -46,9 +40,15 @@
   &:focus {
     border: 1px solid $second-links-color;
   }
+}
 
-  &:hover .clients-list-img,
-  &:focus .clients-list-img {
+.clients__img {
+  fill: $team-media-color;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .clients__link:hover &,
+  .clients__link:focus & {
     fill: $second-links-color;
   }
 }

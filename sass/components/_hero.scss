@@ -14,7 +14,7 @@
 
   background-color: $hero-background-color;
 
-  &-headline {
+  &__headline {
     margin-bottom: 30px;
 
     @include font($fs: 44px, $fw: 900, $lh: 1.36, $ls: 0.06em);
@@ -27,7 +27,7 @@
   }
 }
 
-.hero-button {
+.hero__button {
   width: 216px;
   height: 50px;
   border-radius: 4px;

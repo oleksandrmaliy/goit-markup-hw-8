@@ -1,7 +1,7 @@
-.feature-list {
+.feature__list {
   display: flex;
 
-  & > li {
+  li {
     width: calc((100% - 90px) / 4);
   }
 
@@ -10,7 +10,7 @@
   }
 }
 
-.feature-list-img {
+.feature__img {
   display: flex;
 
   height: 120px;
@@ -22,13 +22,12 @@
   background-color: $team-background-color;
 }
 
-.feature-list-headlines {
+.feature__headlines {
   margin-bottom: 10px;
 
   @include font($fs: null, $fw: 700, $lh: 1.14, $ls: null);
-  
+
   text-transform: uppercase;
 
   color: $headlines-links-color;
 }
-

@@ -2,7 +2,7 @@
   padding-top: 0px;
   text-align: center;
 
-  &-note {
+  &__note {
     position: absolute;
     display: flex;
 
@@ -18,26 +18,26 @@
     background-color: $business-background-color;
   }
 
-  &-headline {
+  &__headline {
     margin-bottom: 50px;
 
     @include font($fs: 36px, $fw: null, $lh: 1.17, $ls: null);
 
     color: $headlines-links-color;
   }
+
+  &__img {
+    position: relative;
+
+    width: calc((100% - 60px) / 3);
+  }
 }
 
-.business-list {
+.business__list {
   display: flex;
 
   li + li {
     margin-left: 30px;
-  }
-
-  .business-list-img {
-    position: relative;
-
-    width: calc((100% - 60px) / 3);
   }
 
   p {
