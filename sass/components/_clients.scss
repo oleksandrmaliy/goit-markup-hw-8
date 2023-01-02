@@ -5,10 +5,8 @@
   &-headline {
     margin-bottom: 50px;
 
-    font-size: 36px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-
+    @include font($fs: 36px, $fw: null, $lh: 1.71, $ls: null);
+    
     color: $headlines-links-color;
   }
 }

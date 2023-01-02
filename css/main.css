@@ -422,8 +422,8 @@ section {
   margin-right: 93px;
   font-family: "Raleway", sans-serif;
   font-style: normal;
-  font-weight: 700;
   font-size: 26px;
+  font-weight: 700;
   line-height: 1.19;
   color: #000000;
 }
@@ -445,11 +445,11 @@ section {
 }
 .hero-headline {
   margin-bottom: 30px;
-  font-weight: 900;
   font-size: 44px;
+  font-weight: 900;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
+  text-align: center;
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -461,8 +461,8 @@ section {
   border: 1px solid transparent;
   font-family: inherit;
   font-style: normal;
-  font-weight: 700;
   font-size: 16px;
+  font-weight: 700;
   line-height: 1.88;
   letter-spacing: 0.06em;
   color: #ffffff;
@@ -504,15 +504,9 @@ section {
 .feature-list-headlines {
   margin-bottom: 10px;
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
-}
-
-.feature-list-text {
-  line-height: 1.71;
 }
 
 .business {
@@ -540,7 +534,6 @@ section {
   margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.17;
-  letter-spacing: 0.03em;
   color: #212121;
 }
 
@@ -558,7 +551,7 @@ section {
 }
 .business-list p {
   font-weight: 700;
-  line-height: 16px;
+  line-height: 1.14;
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -572,7 +565,6 @@ section {
   margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.17;
-  letter-spacing: 0.03em;
   color: #212121;
 }
 
@@ -595,17 +587,15 @@ section {
 }
 .team-list .team-member {
   margin-bottom: 10px;
-  font-weight: 500;
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.19;
-  letter-spacing: 0.03em;
   color: #212121;
 }
 .team-list .team-member-position {
   margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
 }
 .team-list .team-members-description {
   padding-top: 30px;
@@ -638,8 +628,7 @@ section {
 .clients-headline {
   margin-bottom: 50px;
   font-size: 36px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
+  line-height: 1.71;
   color: #212121;
 }
 
@@ -702,10 +691,9 @@ section {
   border-radius: 4px;
   font-family: inherit;
   font-style: normal;
-  font-weight: 500;
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.63;
-  letter-spacing: 0.03em;
   color: var(--headlines-links-color);
   background-color: #f5f4fa;
   -webkit-box-shadow: none;
@@ -790,17 +778,16 @@ section {
 
 .examples-description {
   margin-bottom: 4px;
-  font-weight: 700;
   font-size: 18px;
+  font-weight: 700;
   line-height: 2;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.06;
   color: #212121;
 }
 
 .ex-list-text {
   font-size: 16px;
   line-height: 1.88;
-  letter-spacing: 0.03em;
   color: #757575;
 }
 
@@ -824,8 +811,8 @@ section {
   margin-bottom: 20px;
   font-family: "Raleway", sans-serif;
   font-style: normal;
-  font-weight: 700;
   font-size: 26px;
+  font-weight: 700;
   line-height: 1.19;
   color: #ffffff;
 }
@@ -835,7 +822,6 @@ section {
 
 .footer-contacts .number {
   font-style: normal;
-  line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -857,7 +843,6 @@ section {
 
 .post-address {
   font-style: normal;
-  line-height: 1.71;
   color: #ffffff;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -876,7 +861,6 @@ section {
 .subscribe-headline {
   font-weight: 700;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 20px;
   color: #ffffff;
@@ -959,8 +943,8 @@ section {
   display: flex;
   width: 200px;
   height: 50px;
-  font-weight: 700;
   font-size: 16px;
+  font-weight: 700;
   line-height: 1.88;
   letter-spacing: 0.06em;
   -webkit-box-align: center;
@@ -1027,8 +1011,8 @@ section {
 .modal-headline {
   margin-bottom: 12px;
   text-align: center;
-  font-weight: 700;
   font-size: 20px;
+  font-weight: 700;
   line-height: 1.15;
   color: #212121;
 }
@@ -1218,8 +1202,8 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-weight: 700;
   font-size: 16px;
+  font-weight: 700;
   line-height: 1.88;
   letter-spacing: 0.06em;
   border-radius: 4px;

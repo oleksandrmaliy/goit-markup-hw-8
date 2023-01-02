@@ -25,15 +25,10 @@
 .feature-list-headlines {
   margin-bottom: 10px;
 
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  @include font($fs: null, $fw: 700, $lh: 1.14, $ls: null);
+  
   text-transform: uppercase;
 
   color: $headlines-links-color;
 }
 
-.feature-list-text {
-  line-height: 1.71;
-}

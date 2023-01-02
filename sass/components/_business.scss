@@ -5,26 +5,24 @@
   &-note {
     position: absolute;
     display: flex;
-  
+
     justify-content: center;
     align-items: center;
-  
+
     left: 0;
     bottom: 0;
-  
+
     height: 70px;
     width: 100%;
-  
+
     background-color: $business-background-color;
   }
-  
+
   &-headline {
     margin-bottom: 50px;
-  
-    font-size: 36px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-  
+
+    @include font($fs: 36px, $fw: null, $lh: 1.17, $ls: null);
+
     color: $headlines-links-color;
   }
 }
@@ -43,13 +41,10 @@
   }
 
   p {
-    font-weight: 700;
-    line-height: 16px;
-  
+    @include font($fs: null, $fw: 700, $lh: 1.14, $ls: null);
+
     text-transform: uppercase;
-  
+
     color: $just-white-color;
   }
 }
-
-

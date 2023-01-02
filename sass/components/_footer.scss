@@ -17,9 +17,8 @@
 
   font-family: 'Raleway', sans-serif;
   font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+
+  @include font($fs: 26px, $fw: 700, $lh: 1.19, $ls: null);
 
   color: $just-white-color;
 
@@ -30,7 +29,6 @@
 
 .footer-contacts .number {
   font-style: normal;
-  line-height: 1.71;
 
   color: $footer-contacts-color;
 
@@ -53,7 +51,6 @@
 
 .post-address {
   font-style: normal;
-  line-height: 1.71;
 
   color: $just-white-color;
 
@@ -73,9 +70,8 @@
 
 .join,
 .subscribe-headline {
-  font-weight: 700;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  @include font($fs: null, $fw: 700, $lh: 1.14, $ls: null);
+
   text-transform: uppercase;
 
   margin-bottom: 20px;
@@ -137,8 +133,7 @@
   left: 16px;
   transform: translateY(-50%);
 
-  font-size: 16px;
-  line-height: 1.25;
+  @include font($fs: 16px, $fw: null, $lh: 1.25, $ls: null);
 
   color: $footer-contacts-color;
 }
@@ -153,11 +148,8 @@
   width: 200px;
   height: 50px;
 
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-
+  @include font($fs: 16px, $fw: 700, $lh: 1.88, $ls: 0.06em);
+ 
   align-items: center;
   justify-content: center;
 

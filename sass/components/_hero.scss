@@ -17,11 +17,10 @@
   &-headline {
     margin-bottom: 30px;
 
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    @include font($fs: 44px, $fw: 900, $lh: 1.36, $ls: 0.06em);
+    
     text-align: center;
-    letter-spacing: 0.06em;
+    
     text-transform: uppercase;
 
     color: $just-white-color;
@@ -36,11 +35,9 @@
 
   font-family: inherit;
   font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
 
+  @include font($fs: 16px, $fw: 700, $lh: 1.88, $ls: 0.06em);
+  
   color: $just-white-color;
   background-color: $second-links-color;
 
