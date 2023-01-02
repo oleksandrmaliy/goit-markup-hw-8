@@ -1,4 +1,4 @@
-.peculiarities-list {
+.feature-list {
   display: flex;
 
   & > li {
@@ -10,7 +10,7 @@
   }
 }
 
-.pec-list-img {
+.feature-list-img {
   display: flex;
 
   height: 120px;
@@ -22,7 +22,7 @@
   background-color: $team-background-color;
 }
 
-.pec-list-headlines {
+.feature-list-headlines {
   margin-bottom: 10px;
 
   font-weight: 700;
@@ -34,6 +34,6 @@
   color: $headlines-links-color;
 }
 
-.pec-list-text {
+.feature-list-text {
   line-height: 1.71;
 }

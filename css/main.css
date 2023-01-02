@@ -280,7 +280,7 @@ button {
 }
 
 .header,
-.peculiarities,
+.feature,
 .business,
 .team-list,
 .portfolio {
@@ -474,19 +474,19 @@ section {
   background-color: #188ce8;
 }
 
-.peculiarities-list {
+.feature-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.peculiarities-list > li {
+.feature-list > li {
   width: calc((100% - 90px) / 4);
 }
-.peculiarities-list li + li {
+.feature-list li + li {
   margin-left: 30px;
 }
 
-.pec-list-img {
+.feature-list-img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -501,7 +501,7 @@ section {
   background-color: #f5f4fa;
 }
 
-.pec-list-headlines {
+.feature-list-headlines {
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -511,7 +511,7 @@ section {
   color: #212121;
 }
 
-.pec-list-text {
+.feature-list-text {
   line-height: 1.71;
 }
 
