@@ -28,8 +28,6 @@
 
   @include font($fs: 26px, $fw: 700, $lh: 1.19, $ls: null);
 
-  color: $header-logo-color;
-
   &__web {
     color: $second-links-color;
   }
@@ -37,6 +35,8 @@
 
 .header__logo {
   margin-right: 93px;
+
+  color: $header-logo-color;
 }
 
 .navigation__list {
@@ -88,7 +88,7 @@
 .contacts {
   display: flex;
   align-items: center;
-  
+
   li + li {
     margin-left: 50px;
   }
