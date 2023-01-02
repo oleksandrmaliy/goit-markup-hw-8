@@ -267,6 +267,8 @@ ul {
 body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   padding-top: 80px;
   color: #757575;

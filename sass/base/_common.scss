@@ -1,7 +1,6 @@
 body {
-  font-family: $ff;
-  font-size: $fs;
-  letter-spacing: $ls;
+  font-family: 'Roboto', sans-serif;
+  @include font($fs, $fw, $lh, $ls);
 
   padding-top: 80px;
 
