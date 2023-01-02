@@ -1,4 +1,4 @@
-.filter-list {
+.portfolio__filter {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
@@ -8,17 +8,17 @@
   }
 }
 
-.filter-button {
+.portfolio__button {
   padding: 6px 22px;
 
   border: 1px solid transparent;
   border-radius: 4px;
 
-    font-family: inherit;
+  font-family: inherit;
   font-style: normal;
 
   @include font($fs: 16px, $fw: 500, $lh: 1.63, $ls: null);
-  
+
   color: var(--headlines-links-color);
   background-color: $team-background-color;
   box-shadow: none;

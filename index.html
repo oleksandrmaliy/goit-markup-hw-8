@@ -421,68 +421,68 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="modal-button" data-modal-close>
-          <svg width="11" height="11" class="icon-close">
+        <button class="modal__button" data-modal-close>
+          <svg width="11" height="11" class="modal__close">
             <use href="./images/sprite.svg#icon-close"></use>
           </svg>
         </button>
-        <p class="modal-headline">Залиште свої дані, ми вам передзвонимо</p>
-        <form action="post" class="modal-field">
-          <label for="name" class="modal-label">Ім'я</label>
-          <div class="modal-input">
-            <input type="text" id="name" name="contacts" class="modal-contacts" />
+        <p class="modal__headline">Залиште свої дані, ми вам передзвонимо</p>
+        <form action="post" class="modal__field">
+          <label for="name" class="modal__label">Ім'я</label>
+          <div class="modal__input">
+            <input type="text" id="name" name="contacts" class="modal__contacts" />
             <svg width="18" height="18">
               <use href="./images/sprite.svg#icon-person"></use>
             </svg>
           </div>
-          <label for="tel" class="modal-label">Телефон</label>
-          <div class="modal-input">
-            <input type="tel" id="tel" name="contacts" class="modal-contacts" />
+          <label for="tel" class="modal__label">Телефон</label>
+          <div class="modal__input">
+            <input type="tel" id="tel" name="contacts" class="modal__contacts" />
             <svg width="18" height="18">
               <use href="./images/sprite.svg#icon-phone"></use>
             </svg>
           </div>
-          <label for="email" class="modal-label">Пошта</label>
-          <div class="modal-input">
-            <input type="email" id="email" name="contacts" class="modal-contacts" />
+          <label for="email" class="modal__label">Пошта</label>
+          <div class="modal__input">
+            <input type="email" id="email" name="contacts" class="modal__contacts" />
             <svg width="18" height="18">
               <use href="./images/sprite.svg#icon-email"></use>
             </svg>
           </div>
-          <label for="comment" class="modal-label">Коментар</label>
+          <label for="comment" class="modal__label">Коментар</label>
           <textarea
             name="comment"
             id="comment"
-            class="modal-comment"
+            class="modal__comment"
             placeholder="Введіть текст"
           ></textarea>
-          <div class="agreement">
+          <div class="modal__agreement">
             <input
               type="checkbox"
               id="agreement-checkbox"
               name="modal-agreement"
-              class="agreement-checkbox visually-hidden"
+              class="modal__checkbox visually-hidden"
             />
-            <label for="agreement-checkbox" class="agreement-label">
+            <label for="agreement-checkbox" class="modal__label">
               Погоджуюся з розсилкою та приймаю
               <a
                 href="https://www.rada.gov.ua/"
                 target="_blank"
                 rel="nofollow noreferrer noopener"
-                class="agreement-details"
+                class="modal__details"
                 >Умови договору</a
               >
-              <span class="new-checkbox">
-                <svg width="16" height="15" class="icon-checked">
+              <span class="modal__new-checkbox">
+                <svg width="16" height="15" class="modal__icon--checked">
                   <use href="./images/sprite.svg#icon-checked"></use>
                 </svg>
-                <svg width="16" height="15" class="icon-unchecked">
+                <svg width="16" height="15" class="modal__icon--unchecked">
                   <use href="./images/sprite.svg#icon-unchecked"></use>
                 </svg>
               </span>
             </label>
           </div>
-          <button type="submit" class="modal-submit">Відправити</button>
+          <button type="submit" class="modal__submit">Відправити</button>
         </form>
       </div>
     </div>

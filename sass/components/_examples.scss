@@ -1,13 +1,6 @@
-.examples-list {
+.portfolio__examples {
   display: flex;
   flex-wrap: wrap;
-
-  .description {
-    padding: 20px 0 20px 24px;
-    border-right: 1px solid $example-frame-color;
-    border-bottom: 1px solid $example-frame-color;
-    border-left: 1px solid $example-frame-color;
-  }
 
   li:not(:nth-child(3n + 1)) {
     margin-left: 30px;
@@ -18,16 +11,10 @@
   }
 }
 
-.example {
+.portfolio__link {
   display: block;
 
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &-thumb {
-    position: relative;
-
-    overflow: hidden;
-  }
 
   &:hover,
   &:focus {
@@ -36,7 +23,13 @@
   }
 }
 
-.example-overlay {
+.portfolio__thumb {
+  position: relative;
+
+  overflow: hidden;
+}
+
+.portfolio__overlay {
   display: flex;
   position: absolute;
   top: 0;
@@ -58,12 +51,19 @@
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  .example:hover & {
+  .portfolio__link:hover & {
     transform: translateY(0);
   }
 }
 
-.examples-description {
+.portfolio__designation {
+  padding: 20px 0 20px 24px;
+  border-right: 1px solid $example-frame-color;
+  border-bottom: 1px solid $example-frame-color;
+  border-left: 1px solid $example-frame-color;
+}
+
+.portfolio__description {
   margin-bottom: 4px;
 
   @include font($fs: 18px, $fw: 700, $lh: 2, $ls: 0.06);
@@ -71,7 +71,7 @@
   color: $headlines-links-color;
 }
 
-.ex-list-text {
+.portfolio__text {
   @include font($fs: 16px, $fw: null, $lh: 1.88, $ls: null);
 
   color: $text-main-color;
