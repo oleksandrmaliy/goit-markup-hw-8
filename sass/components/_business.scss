@@ -1,4 +1,6 @@
 .business {
+  display: none;
+
   padding-top: 0px;
   text-align: center;
 
@@ -49,8 +51,8 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1600px) {
   .business {
-    display: none;
+    display: block;
   }
 }
