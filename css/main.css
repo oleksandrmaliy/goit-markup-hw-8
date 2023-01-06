@@ -312,9 +312,19 @@ section {
 }
 
 .container {
-  width: 1200px;
+  width: 480px;
   margin: 0 auto;
   padding: 0px 15px;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .container {
+    width: 1600px;
+  }
 }
 
 .header {
@@ -481,16 +491,13 @@ section {
   background-color: #188ce8;
 }
 
-.feature__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.feature__list > li {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 450px;
 }
-.feature__list li {
-  width: calc((100% - 90px) / 4);
-}
-.feature__list li + li {
-  margin-left: 30px;
+.feature__list > li:not(:first-child) {
+  margin-top: 30px;
 }
 
 .feature__img {
@@ -563,6 +570,11 @@ section {
   color: #ffffff;
 }
 
+@media screen and (max-width: 767px) {
+  .business {
+    display: none;
+  }
+}
 .team {
   text-align: center;
   background-color: #f5f4fa;

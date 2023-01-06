@@ -48,3 +48,9 @@
     color: $just-white-color;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .business {
+    display: none;
+  }
+}
