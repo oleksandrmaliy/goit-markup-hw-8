@@ -55,7 +55,19 @@
           </ul>
         </div>
       </div>
-      <div class="mobile-menu">
+      <button
+        type="button"
+        class="mobile-menu-btn"
+        aria-expanded="false"
+        aria-controls="menu-container"
+        data-menu-button
+      >
+        <svg width="40" height="40" aria-label="переключатель мобильного меню">
+          <use href="./images/sprite.svg#menu-mobile-close" class="icon-cross"></use>
+          <use href="./images/sprite.svg#menu-mobile-open" class="icon-menu"></use>
+        </svg>
+      </button>
+      <div class="mobile-menu" id="menu-container" data-menu>
         <div class="container">
           <nav class="mobile-menu__navigation">
             <ul class="mobile-menu__list list">
@@ -84,9 +96,21 @@
           </ul>
           <ul class="mobile-menu__media-list list">
             <li><a href="#" class="mobile-menu__media-link link"> Instagramm </a></li>
-            <li><a href="#" class="mobile-menu__media-link link"> Twitter </a></li>
-            <li><a href="#" class="mobile-menu__media-link link"> Facebook </a></li>
-            <li><a href="#" class="mobile-menu__media-link link"> LinkedIn </a></li>
+            <li>
+              <a href="#" class="mobile-menu__media-link mobile-menu__media-link--separated link"
+                >Twitter
+              </a>
+            </li>
+            <li>
+              <a href="#" class="mobile-menu__media-link mobile-menu__media-link--separated link">
+                Facebook
+              </a>
+            </li>
+            <li>
+              <a href="#" class="mobile-menu__media-link mobile-menu__media-link--separated link"
+                >LinkedIn</a
+              >
+            </li>
           </ul>
         </div>
       </div>
@@ -591,5 +615,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
