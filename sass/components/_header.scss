@@ -1,10 +1,6 @@
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
+  position: relative;
   width: 100%;
-
-  z-index: 10;
 
   border-bottom: 1px solid $header-frame-color;
 
@@ -40,7 +36,7 @@
 }
 
 .navigation__list {
-  display: flex;
+  display: none;
   align-items: center;
 
   li + li {

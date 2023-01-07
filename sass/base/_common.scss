@@ -2,8 +2,6 @@ body {
   font-family: 'Roboto', sans-serif;
   @include font($fs, $fw, $lh, $ls);
 
-  padding-top: 80px;
-
   color: $text-main-color;
   background-color: $background-color;
 }
