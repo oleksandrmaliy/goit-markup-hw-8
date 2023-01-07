@@ -336,6 +336,7 @@ section {
   border-bottom: 1px solid #ececec;
 }
 .header__flex {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -440,13 +441,16 @@ section {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    display: block;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    margin-top: 21px;
     font-size: 12px;
     line-height: 1.17;
   }
   .contacts li + li {
     margin-left: 0;
+    margin-top: 10px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -482,7 +486,6 @@ section {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts__number {
     padding: 0;
-    margin-left: 50px;
   }
 }
 .contacts__number:hover, .contacts__number:focus {
@@ -493,7 +496,7 @@ section {
   display: block;
   position: absolute;
   z-index: 10;
-  right: 15px;
+  right: 10px;
   top: 10px;
   width: 40px;
   height: 40px;
@@ -522,8 +525,9 @@ section {
   display: none;
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
   width: 100%;
+  overflow: scroll;
   padding: 48px 40px;
   background-color: #ffffff;
 }
@@ -1355,6 +1359,7 @@ section {
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: rgba(0, 0, 0, 0.2);
+  overflow-y: scroll;
 }
 .backdrop.is-hidden {
   visibility: hidden;
@@ -1368,8 +1373,8 @@ section {
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   padding: 40px;
   border-radius: 4px;
   opacity: 1;
@@ -1380,6 +1385,12 @@ section {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #ffffff;
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 .modal__headline {
   margin-bottom: 12px;
