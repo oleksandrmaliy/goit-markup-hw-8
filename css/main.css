@@ -326,9 +326,9 @@ section {
     width: 768px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .container {
-    width: 1600px;
+    width: 1200px;
   }
 }
 .header {
@@ -457,22 +457,60 @@ section {
   margin: 0 auto;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/our-team.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/our-team.jpg);
-  max-width: 1600px;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-mobile-1x.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mobile-1x.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   background-color: #c4c4c4;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-mobile-2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mobile-2x.jpg);
+  }
+}
+@media screen and (min-width: 768x) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-tablet-1x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tablet-1x.jpg);
+  }
+}
+@media screen and (min-width: 768x) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768x) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-tablet-2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tablet-2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/our-team.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/our-team.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-dt-2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-dt-2x.jpg);
+  }
 }
 .hero__headline {
   margin-bottom: 30px;
-  font-size: 44px;
+  font-size: 26px;
   font-weight: 900;
-  line-height: 1.36;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .hero__headline {
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+  }
 }
 
 .hero__button {
@@ -541,7 +579,7 @@ section {
     margin-top: 0;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .feature__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -600,7 +638,7 @@ section {
   color: #ffffff;
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .business {
     display: block;
   }
@@ -664,17 +702,15 @@ section {
     margin-top: 0;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .team__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    grid-gap: 30px;
   }
   .team__list .team__item {
     width: calc((100% - 90px) / 4);
-  }
-  .team__list li + li {
-    margin-left: 30px;
   }
 }
 
@@ -751,7 +787,7 @@ section {
     width: calc((100% - 60px) / 3);
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .clients__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -917,24 +953,18 @@ section {
   padding: 60px 0px;
   background-color: #2f303a;
 }
-.footer__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+.footer__logo {
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffffff;
 }
 .footer__contacts {
   display: block;
-  width: 231px;
-  margin-right: 70px;
-}
-.footer__logo {
-  display: block;
-  width: 145px;
-  margin-bottom: 20px;
-  color: #ffffff;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 60px;
 }
 
 .address li + li {
@@ -965,15 +995,20 @@ section {
 .subscribe__headline {
   font-weight: 700;
   line-height: 1.14;
+  text-align: center;
   text-transform: uppercase;
   margin-bottom: 20px;
   color: #ffffff;
 }
 
 .footer-media__list {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 60px;
 }
 .footer-media__list li + li {
   margin-left: 10px;
@@ -1004,15 +1039,16 @@ section {
   fill: #ffffff;
 }
 
-.subscribe {
-  margin-left: auto;
-  margin-right: 0;
-}
 .subscribe__block {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .subscribe__label {
   position: absolute;
@@ -1026,9 +1062,8 @@ section {
 }
 
 .subscribe__email {
-  width: 358px;
+  width: 100%;
   height: 50px;
-  margin-right: 12px;
   padding-left: 16px;
   color: #ffffff;
   background-color: transparent;
@@ -1053,6 +1088,9 @@ section {
   display: flex;
   width: 200px;
   height: 50px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.88;
@@ -1080,6 +1118,87 @@ section {
   background-color: #188ce8;
 }
 
+@media screen and (min-width: 768px) {
+  .footer__tablet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-preferred-size: space-between;
+        flex-basis: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  .footer__contacts {
+    margin-left: 76px;
+  }
+  .footer__media {
+    margin-right: 89px;
+    margin-left: auto;
+  }
+  .subscribe__email {
+    width: 450px;
+  }
+  .subscribe__label {
+    translatex: 450px;
+  }
+  .subscribe__label {
+    left: 160px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  .footer__contacts {
+    width: 231px;
+    margin-right: 70px;
+    margin-left: 0;
+    text-align: left;
+  }
+  .footer__logo {
+    width: 145px;
+  }
+  .footer-media__list {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+  .footer-media__join,
+.subscribe__headline {
+    text-align: left;
+  }
+  .subscribe {
+    margin-left: auto;
+    margin-right: 0;
+  }
+  .subscribe__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .subscribe__block {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .subscribe__label {
+    left: 16px;
+  }
+  .subscribe__email {
+    width: 358px;
+    margin-right: 12px;
+  }
+  .subscribe__button {
+    margin-top: 0;
+  }
+}
 .backdrop {
   position: fixed;
   z-index: 15;
