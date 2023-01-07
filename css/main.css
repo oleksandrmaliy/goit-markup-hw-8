@@ -527,7 +527,7 @@ section {
   top: 0;
   left: 0;
   width: 100%;
-  overflow: scroll;
+  overflow: auto;
   padding: 48px 40px;
   background-color: #ffffff;
 }
