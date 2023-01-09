@@ -199,14 +199,18 @@
     }
 
     &__contacts {
-      width: 231px;
       margin-right: 70px;
       margin-left: 0;
+      margin-bottom: 0;
       text-align: left;
     }
 
     &__logo {
       width: 145px;
+    }
+
+    &__media {
+      margin-right: 0;
     }
   }
 

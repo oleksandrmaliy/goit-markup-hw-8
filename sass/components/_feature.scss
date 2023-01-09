@@ -13,7 +13,13 @@
 .feature__headlines {
   margin-bottom: 10px;
 
-  @include font($fs: null, $fw: 700, $lh: 1.14, $ls: null);
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
+
+  @include font ($fs: 14px, $fw: 700, $lh: 1.14, $ls: 0.03em);
 
   text-transform: uppercase;
 
